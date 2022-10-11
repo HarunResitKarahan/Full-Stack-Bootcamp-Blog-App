@@ -61,11 +61,22 @@
             Ana Sayfa > Eğitimler
         </div>
         <div class="filters justify-content-around d-flex p-2" style="background-color: #e2e2e2;">
-            <div class="d-flex align-items-center">
-                <p>Sırala: </p>
-                <div class="p-2 border">
-                    A'dan Z'ye Sırala
-                </div>
+            <div class="btn-group">
+                <button type="button" class="btn dropdown-toggle border" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Sırala
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">
+                            A'dan Z'ye Sırala
+                            <img src="./assets/icons/arrow-down-short.svg" alt=""></a></li>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            Z'den A'ya Sırala
+                            <img src="./assets/icons/arrow-up-short.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
             </div>
             <div class="d-flex align-items-center">
                 <p>Seviye: </p>
