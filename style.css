@@ -1,5 +1,6 @@
 * {
     font-family: 'Lato', sans-serif !important;
+    user-select: none;
 }
 
 p {
