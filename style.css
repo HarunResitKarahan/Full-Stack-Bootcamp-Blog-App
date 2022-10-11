@@ -28,3 +28,8 @@ footer {
     transition: border-width 0.3s ease;
     border-bottom: 3px solid rgba(0, 0, 0, 0.253);
 }
+
+.categoryItems .items {
+    background-color: rgb(238, 238, 238);
+    padding: 7px;
+}
