@@ -60,89 +60,91 @@
         <div class="p-3 bg-light">
             Ana Sayfa > Eğitimler
         </div>
-        <div class="filters justify-content-around d-flex p-2" style="background-color: #e2e2e2;">
-            <div class="btn-group">
-                <button type="button" class="btn dropdown-toggle border" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Sırala
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">
-                            A'dan Z'ye Sırala
-                            <img src="./assets/icons/arrow-down-short.svg" alt=""></a></li>
-                    <li>
-                        <a class="dropdown-item" href="#">
-                            Z'den A'ya Sırala
-                            <img src="./assets/icons/arrow-up-short.svg" alt="">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="btn-group">
-                <button type="button" class="btn dropdown-toggle border" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Seviye
-                </button>
-                <ul class="dropdown-menu">
-                    <li>
-                        <a class="dropdown-item" href="#">
-                            Başlangıç
-                    <li>
-                        <a class="dropdown-item" href="#">
-                            Orta
-                        </a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="#">
-                            İleri
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="btn-group">
-                <button type="button" class="btn dropdown-toggle border" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Dil
-                </button>
-                <ul class="dropdown-menu">
-                    <li>
-                        <a class="dropdown-item" href="#">
-                            Türkçe
-                    <li>
-                        <a class="dropdown-item" href="#">
-                            İngilizce
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="btn-group">
-                <button type="button" class="btn dropdown-toggle border" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Süre
-                </button>
-                <ul class="dropdown-menu">
-                    <li>
-                        <a class="dropdown-item" href="#">
-                            0-1 Saat
-                    <li>
-                        <a class="dropdown-item" href="#">
-                            1-3 Saat
-                        </a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="#">
-                            3-12 Saat
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="d-flex align-items-center">
-                <p>Görünüm: </p>
-                <div onclick="displayRow()" class="p-2">
-                    <img src="./assets/icons/layout-three-columns.svg" style="cursor: pointer;" alt="">
+        <div class="container">
+            <div class="filters d-flex p-2" style="background-color: #e2e2e2;">
+                <div class="btn-group">
+                    <button type="button" class="btn dropdown-toggle border" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Sırala
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">
+                                A'dan Z'ye Sırala
+                                <img src="./assets/icons/arrow-down-short.svg" alt=""></a></li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                Z'den A'ya Sırala
+                                <img src="./assets/icons/arrow-up-short.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div onclick="displayColumn()" style="cursor: pointer;" class="p-2">
-                    <img src="./assets/icons/layout-three-columns.svg" alt="" style="transform: rotate(90deg);">
+                <div class="btn-group">
+                    <button type="button" class="btn dropdown-toggle border" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Seviye
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                Başlangıç
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                Orta
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                İleri
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn dropdown-toggle border" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Dil
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                Türkçe
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                İngilizce
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn dropdown-toggle border" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Süre
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                0-1 Saat
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                1-3 Saat
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                3-12 Saat
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex align-items-center ms-auto">
+                    <p>Görünüm: </p>
+                    <div onclick="displayRow()" class="p-2">
+                        <img src="./assets/icons/layout-three-columns.svg" style="cursor: pointer;" alt="">
+                    </div>
+                    <div onclick="displayColumn()" style="cursor: pointer;" class="p-2">
+                        <img src="./assets/icons/layout-three-columns.svg" alt="" style="transform: rotate(90deg);">
+                    </div>
                 </div>
             </div>
         </div>
