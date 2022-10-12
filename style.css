@@ -38,8 +38,18 @@ footer {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
+/* .whatWeDid::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 50px;
+    border-bottom: 4px solid rgb(0, 255, 13);
+} */
+
 .whatWeDid:hover {
     cursor: pointer;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
     transform: scale(1.02);
 }
