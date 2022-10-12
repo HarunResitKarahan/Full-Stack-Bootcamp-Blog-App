@@ -33,3 +33,13 @@ footer {
     background-color: rgb(238, 238, 238);
     padding: 7px;
 }
+
+.whatWeDid {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.whatWeDid:hover {
+    cursor: pointer;
+    transition: all 0.5s ease;
+    transform: scale(1.02);
+}
