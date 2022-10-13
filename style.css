@@ -106,6 +106,10 @@ footer {
     cursor: pointer;
 }
 
+.contactForm .row div:hover .changeBackground {
+    background-color: rgb(231, 188, 182) !important;
+}
+
 /* .contactFormTitle {} */
 
 @keyframes moveLeftBorder {
