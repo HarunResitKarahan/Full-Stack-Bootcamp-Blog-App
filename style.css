@@ -34,10 +34,6 @@ footer {
     padding: 7px;
 }
 
-.whatWeDid {
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-}
-
 /* .whatWeDid::before {
     content: "";
     position: absolute;
@@ -47,12 +43,6 @@ footer {
     width: 50px;
     border-bottom: 4px solid rgb(0, 255, 13);
 } */
-
-.whatWeDid:hover {
-    cursor: pointer;
-    transition: all 0.3s ease;
-    transform: scale(1.02);
-}
 
 .more:hover {
     transition: all 0.3s ease;
@@ -71,4 +61,61 @@ footer {
 
 .routerShow {
     font-size: 14px;
+}
+
+.whatWeDid {
+    background-color: #ffffff00;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.whatWeDid:hover .movableBorder {
+    left: 70%;
+    /* transform: scale(1.02); */
+}
+
+.whatWeDid:hover .movableBorder2 {
+    animation: move 0.3s forwards;
+    animation-timing-function: ease;
+    /* transform: scale(1.02); */
+}
+
+
+.whatWeDid .movableBorder {
+    width: 30%;
+    height: 3px;
+    background-color: rgb(255, 123, 0);
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.whatWeDid .movableBorder2 {
+    width: 3px;
+    height: 30%;
+    background-color: rgb(255, 123, 0);
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+@keyframes move {
+    0% {
+        top: -4px;
+    }
+
+    100% {
+        top: calc(70% + 4px);
+    }
+
+    /* 100% {
+        top: calc(70% + 4px);
+        left: 70%;
+    } */
 }
