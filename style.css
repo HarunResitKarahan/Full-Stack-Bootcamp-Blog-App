@@ -71,13 +71,13 @@ footer {
     transition: all 0.3s ease;
 }
 
-.whatWeDid:hover .movableBorder {
+.whatWeDid:hover .movableBorderTop {
     animation: moveTopBorder 0.2s forwards;
     animation-timing-function: ease;
     /* transform: scale(1.02); */
 }
 
-.whatWeDid:hover .movableBorder2 {
+.whatWeDid:hover .movableBorderLeft {
     animation: moveLeftBorder 0.2s forwards;
     animation-timing-function: ease;
     /* transform: scale(1.02); */
@@ -85,17 +85,6 @@ footer {
 
 
 .whatWeDid .movableBorder {
-    width: 30%;
-    height: 30%;
-    background-color: rgb(255, 123, 0);
-    position: absolute;
-    top: -4px;
-    left: -4px;
-    z-index: -1;
-    transition: all 0.3s ease;
-}
-
-.whatWeDid .movableBorder2 {
     width: 30%;
     height: 30%;
     background-color: rgb(255, 123, 0);

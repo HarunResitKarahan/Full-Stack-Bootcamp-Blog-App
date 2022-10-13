@@ -1,6 +1,17 @@
 const language = document.querySelector('.changeLanguage')
 const languageIcon = language.children[0]
+
 language.addEventListener("click", changeLanguage, false)
+document.addEventListener('DOMContentLoaded', function () {
+    var randomColor = Math.floor(Math.random() * 16777215).toString(16);
+    document.querySelectorAll('.movableBorder').forEach((item, index) => {
+        if (index > 1 && index % 2 === 0) {
+            randomColor = Math.floor(Math.random() * 16777215).toString(16);
+        }
+        item.style.backgroundColor = "#" + randomColor;
+    })
+}, false);
+
 function changeLanguage() {
     languageName = languageIcon.attributes[1].textContent.split("/")
     languageName = languageName[languageName.length - 1]
