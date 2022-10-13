@@ -72,13 +72,13 @@ footer {
 }
 
 .whatWeDid:hover .movableBorder {
-    animation: moveTopBorder 1s forwards;
+    animation: moveTopBorder 0.2s forwards;
     animation-timing-function: ease;
     /* transform: scale(1.02); */
 }
 
 .whatWeDid:hover .movableBorder2 {
-    animation: moveLeftBorder 1s forwards;
+    animation: moveLeftBorder 0.2s forwards;
     animation-timing-function: ease;
     /* transform: scale(1.02); */
 }
