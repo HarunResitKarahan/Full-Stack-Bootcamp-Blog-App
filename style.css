@@ -102,7 +102,7 @@ footer {
     z-index: -1;
 }
 
-.contactFormTitle {}
+/* .contactFormTitle {} */
 
 @keyframes moveLeftBorder {
     0% {}
