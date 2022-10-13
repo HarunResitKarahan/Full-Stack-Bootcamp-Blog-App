@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 }, false);
 
 function changeLanguage() {
-    languageName = languageIcon.attributes[1].textContent.split("/")
+    let languageName = languageIcon.attributes[1].textContent.split("/")
     languageName = languageName[languageName.length - 1]
     if (languageName == 'turkey.png') {
         languageIcon.src = './assets/images/united-kingdom.png'
