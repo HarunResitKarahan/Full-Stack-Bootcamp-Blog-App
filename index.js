@@ -32,5 +32,16 @@ function displayColumn() {
 function displayRow() {
     document.querySelector('.displayRow').style.display = 'block'
     document.querySelector('.displayColumn').style.display = 'none'
+}
 
+function changeForm(event) {
+    let contactForm = document.querySelector('.formsContactForm')
+    let projectForm = document.querySelector('.formsProjectForm')
+    if (event.classList[0] === 'formsContactFormImage') {
+        projectForm.style.display = 'none'
+        contactForm.style.display = 'block'
+    } else if (event.classList[0] === 'formsProjectFormImage') {
+        projectForm.style.display = 'block'
+        contactForm.style.display = 'none'
+    }
 }
