@@ -7,6 +7,10 @@ p {
     margin: 0 !important;
 }
 
+main {
+    min-height: 90vh;
+}
+
 .navbarMenu .navbarMenuItems {
     width: fit-content;
 }
@@ -24,7 +28,7 @@ footer {
     color: black;
 }
 
-.nav-item:hover {
+.nav-item:hover a {
     transition: border-width 0.3s ease;
     border-bottom: 3px solid rgba(0, 0, 0, 0.253);
 }
