@@ -53,3 +53,9 @@ footer {
     transition: all 0.3s ease;
     transform: scale(1.02);
 }
+
+.more:hover {
+    transition: all 0.3s ease;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
