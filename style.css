@@ -102,6 +102,10 @@ footer {
     z-index: -1;
 }
 
+.contactForm .row div {
+    cursor: pointer;
+}
+
 /* .contactFormTitle {} */
 
 @keyframes moveLeftBorder {
