@@ -34,14 +34,43 @@ function displayRow() {
     document.querySelector('.displayColumn').style.display = 'none'
 }
 
+function changeFormImageBackgroundColor(formClassName) {
+    let forms = document.querySelectorAll('.formImages')
+    forms.forEach(item => {
+        if (item.classList[0] === formClassName) {
+            item.childNodes.forEach(child => {
+                if (child.className) {
+                    if (child.className.includes('changeBackground')) {
+                        console.log(child)
+                        child.style.backgroundColor = 'rgb(231, 188, 182)'
+                    }
+                }
+            })
+        } else {
+            item.childNodes.forEach(child => {
+                if (child.className) {
+                    if (child.className.includes('changeBackground')) {
+                        console.log(child)
+                        child.style.backgroundColor = 'rgb(182, 208, 231)'
+                    }
+                }
+            })
+        }
+    })
+    // console.log(formClassName)
+    // console.log(forms)
+}
+
 function changeForm(event) {
     let contactForm = document.querySelector('.formsContactForm')
     let projectForm = document.querySelector('.formsProjectForm')
     if (event.classList[0] === 'formsContactFormImage') {
         projectForm.style.display = 'none'
+        changeFormImageBackgroundColor(event.classList[0])
         contactForm.style.display = 'block'
     } else if (event.classList[0] === 'formsProjectFormImage') {
         projectForm.style.display = 'block'
+        changeFormImageBackgroundColor(event.classList[0])
         contactForm.style.display = 'none'
     }
 }
