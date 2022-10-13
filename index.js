@@ -62,15 +62,15 @@ function changeFormImageBackgroundColor(formClassName) {
 }
 
 function changeForm(event) {
-    let contactForm = document.querySelector('.formsContactForm')
-    let projectForm = document.querySelector('.formsProjectForm')
-    if (event.classList[0] === 'formsContactFormImage') {
-        projectForm.style.display = 'none'
-        changeFormImageBackgroundColor(event.classList[0])
-        contactForm.style.display = 'block'
-    } else if (event.classList[0] === 'formsProjectFormImage') {
-        projectForm.style.display = 'block'
-        changeFormImageBackgroundColor(event.classList[0])
-        contactForm.style.display = 'none'
-    }
+    let contactForm = document.querySelectorAll('.forms')
+    contactForm.forEach(item => {
+        // console.log(item)
+        if (event.classList[0].includes(item.classList[0])) {
+            // console.log(item)
+            item.style.display = 'block'
+            changeFormImageBackgroundColor(event.classList[0])
+        } else {
+            item.style.display = 'none'
+        }
+    })
 }

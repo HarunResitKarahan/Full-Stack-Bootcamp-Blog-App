@@ -212,7 +212,7 @@
                     </div>
                 </div>
                 <br>
-                <div class="formsContactForm border border-3 px-4 py-2" style="display: block;">
+                <div class="formsContactForm forms border border-3 px-4 py-2" style="display: block;">
                     <h4 class="my-3">İletişim Bilgileri</h4>
                     <div class="mb-3">
                         <label for="contactPersonName" class="form-label">Adınız Soyadınız: *</label>
@@ -230,8 +230,92 @@
                         GÖNDER
                     </div>
                 </div>
-                <div class="formsProjectForm border border-3 px-4 py-2" style="display: none;">
+                <div class="formsProjectForm forms border border-3 px-4 py-2" style="display: none;">
                     <h4 class="my-3">Kişisel Bilgiler</h4>
+                    <div>
+                        <div class="my-2 row">
+                            <label for="personName" class="col-sm-2 col-form-label">İsim*:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="personName">
+                            </div>
+                        </div>
+                        <div class="my-2 row">
+                            <label for="phoneNumber" class="col-sm-2 col-form-label">Tel No*:</label>
+                            <div class="col-sm-10">
+                                <input type="phone" class="form-control" id="phoneNumber">
+                            </div>
+                        </div>
+                        <div class="my-2 row">
+                            <label for="email" class="col-sm-2 col-form-label">E-Posta*:</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="my-3">Firma Bilgiler</h4>
+                    <div>
+                        <div class="my-2 row">
+                            <label for="companyName" class="col-sm-2 col-form-label">Firma Adı*:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="companyName">
+                            </div>
+                        </div>
+                        <div class="my-2 row">
+                            <label for="workerPosition" class="col-sm-2 col-form-label">Firmadaki Pozisyonunuz:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="workerPosition">
+                            </div>
+                        </div>
+                        <div class="my-2 row">
+                            <label for="companyWebSite" class="col-sm-2 col-form-label">Firma Web Sitesi:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="companyWebSite">
+                            </div>
+                        </div>
+                        <div class="my-2 row">
+                            <label for="companyPhone" class="col-sm-2 col-form-label">Firma Telefonu:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="companyPhone">
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="my-3">Proje Bilgileri</h4>
+                    <div>
+                        <div class="my-2 row">
+                            <label for="projectName" class="col-sm-2 col-form-label">Proje Adı*:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="projectName">
+                            </div>
+                        </div>
+                        <div class="my-3">
+                            <label for="projectDetails" class="form-label">Proje Detayları: </label>
+                            <textarea class="form-control" id="projectDetails" rows="5"
+                                style="resize: none;"></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="my-2 row align-items-center">
+                            <label class="col-sm-3 col-form-label">Dönüş Şekli: </label>
+                            <div class="col-sm-9">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Mail</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">Telefon</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="formSend p-3">
+                        GÖNDER
+                    </div>
+                </div>
+                <div class="formsApplicationForm forms border border-3 px-4 py-2" style="display: none;">
+                    <h4 class="my-3">Kişisell Bilgiler</h4>
                     <div>
                         <div class="my-2 row">
                             <label for="personName" class="col-sm-2 col-form-label">İsim*:</label>
