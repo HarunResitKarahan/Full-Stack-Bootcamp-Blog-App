@@ -110,6 +110,13 @@ footer {
     background-color: rgb(231, 188, 182) !important;
 }
 
+.formSend {
+    background-color: rgb(182, 208, 231);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
 /* .contactFormTitle {} */
 
 @keyframes moveLeftBorder {
