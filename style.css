@@ -92,10 +92,10 @@ footer {
 }
 
 
-.whatWeDid .movableBorder {
+.movableBorder {
     width: 30%;
     height: 30%;
-    background-color: rgb(255, 123, 0);
+    background-color: rgb(33 81 118);
     position: absolute;
     top: -4px;
     left: -4px;
