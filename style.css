@@ -87,12 +87,11 @@ footer {
 .whatWeDid .movableBorder {
     width: 30%;
     height: 30%;
-    /* background-color: rgb(255, 123, 0); */
+    background-color: rgb(255, 123, 0);
     position: absolute;
     top: -4px;
     left: -4px;
     z-index: -1;
-    transition: all 0.3s ease;
 }
 
 @keyframes moveLeftBorder {

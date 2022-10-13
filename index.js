@@ -4,7 +4,7 @@ const languageIcon = language.children[0]
 language.addEventListener("click", changeLanguage, false)
 document.addEventListener('DOMContentLoaded', function () {
     if (window.location.pathname == '/portfolyo.html') {
-        var randomColor = Math.floor(Math.random() * 16777215).toString(16);
+        let randomColor = Math.floor(Math.random() * 16777215).toString(16);
         document.querySelectorAll('.movableBorder').forEach((item, index) => {
             if (index > 1 && index % 2 === 0) {
                 randomColor = Math.floor(Math.random() * 16777215).toString(16);
